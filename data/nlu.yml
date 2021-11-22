@@ -1,0 +1,189 @@
+version: "2.0"
+nlu:
+- intent: cumprimentar
+  examples: |
+    - /start
+    - hey
+    - Oi
+    - Olá
+    - E aí
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+    - oi
+    - OI
+    - oii
+    - boa tarde
+    - boa noite
+    - bom dia
+- intent: despedir
+  examples: |
+    - Até
+    - tchau
+    - tenha um bom dia
+    - adeus
+    - flw
+    - Até mais, bot
+    - muito obrigada!
+- intent: afirmar
+  examples: |
+    - sim
+    - s
+    - claro
+    - mas é claro
+    - correto
+    - parece legal
+    - exato
+    - isso mesmo
+- intent: negar
+  examples: |
+    - não
+    - n
+    - nunca
+    - eu não acho isso
+    - não gosto disso
+    - de jeito nenhum
+    - realmente não
+    - escolhi errado
+    - falei errado
+    - negativo
+- intent: tudo_bem
+  examples: |
+    - tudo bem
+    - como vai voce
+    - como vao as coisas
+    - to bem
+    - tranquilo
+    - estou bem
+    - estou otimo
+    - tudo bem e você
+    - como vocês esta
+    - tudo bem aí?
+- intent: fora_de_escopo
+  examples: |
+    - Quero perdir comida.
+    - quanto é 2+2?
+    - quem é o presidente do Brasil?
+- intent: covid_intro
+  examples: |
+    - O que é o coronavírus?
+    - O que é Covid-19?
+    - Me fala sobre coronavirus?
+    - Me fala sobre covid-19?
+    - O que é Covid?
+    - Me fala sobre covid?
+    - Coronavirus?
+    - Covid
+    - Covid-19
+    - Preciso saber o que é Covid?
+    - Informações sobre Covid
+    - o que é covid
+    - O que é covid?
+    - O que é covid
+    - O que é coronavirus?
+    - COVID
+    - covid44
+- intent: covid_sintomas
+  examples: |
+    - Quais os sintomas do coronavírus?
+    - Quais os sintomas do covid-19?
+    - Quais os sintomas do covid?
+    - Me fala dos sintomas do coronavírus?
+    - Me fala dos sintomas do covid-19?
+    - Me fala dos sintomas do covid?
+    - Quais são os sintomas do coronavírus?
+    - Quais são os sintomas do covid-19?
+    - Quais são os sintomas do covid?
+    - Sintomas do Corona
+    - Sintomas de Covid
+    - Sintomas de Covid-19
+- intent: covid_transmissao
+  examples: |
+    - Como o coronavírus é transmitido?
+    - Como o covid-19 é transmitido?
+    - Como o covid é transmitido
+    - Como o coronavírus se transmite?
+    - Como o covid-19 se transmite?
+    - Como o covid se transmite?
+    - Como pega covid
+    - O que causa Covid?
+    - Covid é transmissivel?
+    - Covid pega?
+    - Quero informações sobre o contágio de covid
+- intent: covid_precaucoes
+  examples: |
+    - Como se prevenir contra a coronavírus?
+    - Como se prevenir contra a COVID?
+    - Como proteger de corona?
+    - Prevenção para o covid
+    - Prevenção para o corona virus?
+    - prevencao
+    - precaução
+    - Como se prevenir contra a COVID-19?
+    - Medidas preventivas
+    - Medidas preventivas para o Covid
+    - O que posso fazer pra me proteger do Covid?
+    - Como me proteger do covid?
+    - O que usar contra covid?
+    - O que protege de covid-19?
+    - precauções conta a covid-19.
+    - Quais cuidados devo tomar?
+    - Cuidados
+    - Quais cuidados preciso tomar para prevenir covod
+- intent: covid_contato_emergencial
+  examples: |
+    - O que fazer em caso de sintomas?
+    - Estou com sintomas.
+    - Estou sentindo sintomas de covid
+    - O que devo fazer em caso de sintomas?
+    - O que fazer em caso de sintomas de covid
+    - O que devo fazer em caso de sintomas covid?
+    - O que fazer em caso de sintomas de covid-19?
+    - O que devo fazer em caso de sintomas covid-19?
+    - O que fazer em caso de sintomas de coronavirus?
+    - O que devo fazer em caso de sintomas coronavirus?
+    - O que fazer se sentir sintomas
+    - Que médico procurar em caso de suspeita de covid?
+    - estou com sintomas
+- intent: covid_pontos_vacinacao
+  examples: |
+    - Quais são os pontos de vacinação?
+    - Quais são os postos de vacinação?
+    - Onde posso me vacinar?
+    - Qual o posto de vacinação mais perto da minha casa?
+    - Onde posso tomar a vacina?
+    - Onde ir para tomar a vacina?
+    - Vacinação
+    - Quais são os pontos para vacinação
+    - Vacinas para covid19
+- intent: covid_medicacao
+  examples: |
+    - Existe vacina para prevenção ao coronavírus?
+    - Existe vacina para prevenção ao COVID-19?
+    - Existe vacina para prevenção ao COVID?
+    - Que remétio tomar pra covid?
+    - O que cura covid
+    - existe remedio
+    - quais são os remedios
+    - Qual e o tratamento para covid.
+    - tratamento
+    - O que cura corona?
+    - O que posso tomar para covid?
+    - O que não posso tomar com covid?
+    - Qual remédio posso tomar com covid
+    - Remédio para coronavirus
+    - tem remedio para covid?
+    - Imunizantes para covid19
+- intent: covid_diagnostico
+  examples: |
+    - Como é feito o diagnóstico da COVID-19?
+    - Como é feito o diagnóstico da coronavírus?
+    - Como é feito o diagnóstico da COVID?
+    - Como diagnosticar Covid?
+    - Como descobrir se estou com covid?
+    - Como saber se tenho covid?
+    - Estou com covid?
+    - Como saber se tenho coronavisrus
+    - Como descobrir se tenho covid?
+    - Como identificar covid
+    - como e feito o diagnostico

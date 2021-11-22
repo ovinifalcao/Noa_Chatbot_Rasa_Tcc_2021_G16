@@ -1,0 +1,124 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- cumprimentar:
+    use_entities: true
+- despedir:
+    use_entities: true
+- afirmar:
+    use_entities: true
+- negar:
+    use_entities: true
+- tudo_bem:
+    use_entities: true
+- fora_de_escopo:
+    use_entities: true
+- covid_intro:
+    use_entities: true
+- covid_sintomas:
+    use_entities: true
+- covid_transmissao:
+    use_entities: true
+- covid_precaucoes:
+    use_entities: true
+- covid_contato_emergencial:
+    use_entities: true
+- covid_pontos_vacinacao:
+    use_entities: true
+- covid_medicacao:
+    use_entities: true
+- covid_diagnostico:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- start:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_cumprimentar:
+  - text: |-
+      Olá, eu sou a Noa! 
+      Sou uma assistente virtual para te ajudar a tirar dúvidas sobre COVID-19!
+      Em que posso te ajudar?
+  utter_despedir:
+  - text: Até logo!
+  utter_tudo_bem:
+  - text: Tudo bem, obrigada! Em que posso te ajudar?
+  utter_continuar_conversa:
+  - text: |
+      "Posso te ajudar em mais alguma coisa?"
+  - text: |
+      "Gostaria de falar sobre algo mais?"
+  utter_fora_de_escopo:
+  - text: Desulpa, mas não consigo respoder essa pergunta.
+  utter_fallback:
+  - text: Não entendi. Pode escrever de outra forma?
+  utter_covid_intro:
+  - text: Os coronavírus são uma grande família viral, conhecidos desde meados de 1960, que causam infecções respiratórias em seres humanos e em animais.Geralmente, infecções por coronavírus causam doenças respiratórias leves a moderadas, semelhantes a um resfriado comum. Porém, alguns coronavírus podem causar doenças graves com impacto em termos de saúde pública, como já verificado com a Síndrome Respiratória Aguda Grave (SARS), identificada em 2002, e a Síndrome Respiratória do Oriente Médio (MERS), identificada em 2012.
+  utter_covid_sintomas:
+  - text: |-
+      Os sinais e sintomas clínicos são principalmente respiratórios, semelhantes aos de um resfriado comum. Podem também causar infecção do trato respiratório inferior, como as pneumonias.
+       Os principais sintomas são: 
+         * Febre 
+         * Tosse
+         * Coriza 
+         * Dificuldade para respirar
+  utter_covid_transmissao:
+  - text: |-
+      As investigações sobre transmissão do novo coronavírus ainda estão em andamento. Neste momento está estabelecida transmissão por contato com secreções. A transmissão pode ocorrer de forma continuada, ou seja, um infectado pelo vírus pode passá-lo para alguém que ainda não foi infectado.
+      A transmissão costuma ocorrer pelo ar ou por contato pessoal com secreções contaminadas, como: 
+      * Gotículas de saliva
+      * Espirro
+      * Tosse
+      * Catarro
+      * Contato pessoal próximo, como toque ou aperto de mão com pessoa infectada
+      * Contato com objetos ou superfícies contaminadas, seguido de contato com a boca, nariz ou olhos.
+
+      Alguns vírus são altamente contagiosos, como o sarampo, que é transmitido por aerossol (partículas no ar), com proporção de transmissão de uma para até 18 pessoas, em média. 
+      O conhecimento já registrado sobre os coronavírus indica que eles apresentam transmissão de uma para até três pessoas.
+  utter_covid_precaucoes:
+  - text: |-
+      As principais orientações são: 
+      * Cobrir boca e nariz ao tossir ou espirrar
+      * Utilizar lenço descartável para higiene nasal
+      * Evitar tocar mucosas de olhos, nariz e boca 
+      * Não compartilhar objetos de uso pessoal
+      * Limpar regularmente o ambiente e mantê-lo ventilado 
+      * Lavar as mãos por pelo menos 20 segundos com água e sabão ou usar antisséptico de mãos à base de álcoo
+      * Deslocamentos/viagens não devem ser realizados enquanto a pessoa estiver doente
+  utter_covid_contato_emergencial:
+  - text: |-
+      Se apresentar sintomas como falta de ar ou desconforto respiratório, o
+      paciente deve procurar o serviço de saúde mais próximo da sua residência.
+      O profissional vai avaliar se os sintomas podem indicar alguma probabilidade de
+      infecção por coronavírus, coletar material para diagnóstico e iniciar o
+      tratamento.A infecção apresenta manifestações clínicas parecidas com as de
+      outros vírus e não existe tratamento específico para infecções por coronavírus
+      até o momento.
+      Dessa forma, no caso do novo coronavírus é indicado: 
+      * Repouso 
+      * Hidratação (ingestão de bastante água e líquidos)   
+      * Medidas adotadas para aliviar os sintomas, conforme cada caso, como uso de medicamento para dor e febre (antitérmicos e analgésicos Uso de umidificador no quarto
+      * Tomar banho quente para auxiliar no alívio da dor de garganta e tosse
+
+      Pacientes com sintomas mais intensos podem ser hospitalizados.  
+      A definição compete ao médico responsável pelo caso. 
+      Os hospitais de referência para o tratamento de casos graves são:
+      Hospital das Clínicas de São Paulo (HCFMUSP) e Instituto de Infectologia
+      Emílio Ribas, na capital. No interior, HCs de Ribeirão Preto (USP) e Campinas
+      (Unicamp), Hospital de Base de São José do Rio Preto e, no litoral, o Emílio
+      Ribas II, do Guarujá, entre outros.
+  utter_covid_pontos_vacinacao:
+  - text: A vacina está disponível nos postos de vacinação do SUS para os grupos prioritários definidos na campanha. Confira aqui no site Vacina Já (https://vacinaja.sp.gov.br/) o calendário dos grupos já anunciados e consulte-o sempre que necessário para saber se você já pode participar da campanha. Nele você também encontra os endereços dos postos fixos (clique no botão “Locais de vacinação”). Consulte também os canais oficiais de comunicação da Prefeitura de sua cidade para mais informações sobre as estratégias especiais de vacinação, como postos volantes, a exemplo dos drive-thru.
+  utter_covid_medicacao:
+  - text: Não existe remédio específico. O tratamento é baseado no quadro clínico da pessoa. É indicado repouso e consumo de bastante água, além de algumas medidas adotadas para aliviar os sintomas, conforme cada caso, como, por exemplo, uso de medicamento para dor e febre (antitérmicos e analgésicos), uso de umidificador no quarto ou tomar banho quente para auxiliar no alívio da dor de garganta e tosse.
+  utter_covid_diagnostico:
+  - text: O diagnóstico é feito com a coleta de materiais respiratórios (aspiração de vias aéreas ou coleta de secreções da boca e nariz). O procedimento deve ser realizado para todos os casos suspeitos. O Estado conta com a Plataforma de Laboratórios que integra mais de 30 serviços habilitados para realizar análises. Conforme definido pelo Ministério da Saúde, todos os laboratórios públicos ou privados que identificarem casos confirmados pela primeira vez, adotando o exame específico para SARS-CoV2 (RT-PCR, pelo protocolo Charité), devem passar por validação de um dos três laboratórios de referência nacional Fundação Oswaldo Cruz (Fiocruz/RJ), Instituto Evandro Chagas da Secretaria de Vigilância em Saúde (IEC/SVS) no Estado do Pará, e Instituto Adolfo Lutz da Secretaria de Saúde do Estado de São Paulo. Após a validação da qualidade, o laboratório passará a ser considerado parte da Rede Nacional de Alerta e Resposta às Emergências em Saúde Pública, para investigação do coronavírus.
+actions: []
+forms: {}
+e2e_actions: []

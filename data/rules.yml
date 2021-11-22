@@ -1,0 +1,29 @@
+version: "2.0"
+
+rules:
+
+- rule: Fora de escopo
+  steps:
+  - intent: fora_de_escopo
+  - action: utter_fora_de_escopo
+
+- rule: Pedir para reformular a mensagem 
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: start telegram 
+  steps:
+  - intent: start
+  - action: utter_cumprimentar
+
+- rule: Falar tchau toda ver que o usuario falar tchau
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- rule: Falar oi toda ver que o usuario falar oi
+  conversation_start: true
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar

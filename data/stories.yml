@@ -1,0 +1,64 @@
+version: "2.0"
+
+stories:
+- story: cumprimentar
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+
+- story: Oi Tudo Bem
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: tudo_bem
+  - action: utter_tudo_bem
+
+- story: Tudo Bem 
+  steps:
+  - intent: tudo_bem
+  - action: utter_tudo_bem
+
+- story: Despedir
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- story: covid intro
+  steps:
+  - intent: covid_intro
+  - action: utter_covid_intro
+
+- story: covid sintomas
+  steps:
+  - intent: covid_sintomas
+  - action: utter_covid_sintomas
+
+- story: covid transmissao
+  steps:
+  - intent: covid_transmissao
+  - action: utter_covid_transmissao
+
+- story: covid precaucoes
+  steps:
+  - intent: covid_precaucoes
+  - action: utter_covid_precaucoes
+
+- story: covid contato emergencial
+  steps:
+  - intent: covid_contato_emergencial
+  - action: utter_covid_contato_emergencial
+
+- story: covid pontos vacinacao
+  steps:
+  - intent: covid_pontos_vacinacao
+  - action: utter_covid_pontos_vacinacao
+
+- story: covid medicacao
+  steps:
+  - intent: covid_medicacao
+  - action: utter_covid_medicacao
+
+- story: covid diagnostico
+  steps:
+  - intent: covid_diagnostico
+  - action: utter_covid_diagnostico

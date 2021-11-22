@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Bom dia",
+    "intent": "despedir",
+    "intent_prediction": {
+      "name": "cumprimentar",
+      "confidence": 0.309273898601532
+    }
+  },
+  {
+    "text": "Boa noite",
+    "intent": "despedir",
+    "intent_prediction": {
+      "name": "cumprimentar",
+      "confidence": 0.3330918550491333
+    }
+  },
+  {
+    "text": "Boa tarde",
+    "intent": "despedir",
+    "intent_prediction": {
+      "name": "cumprimentar",
+      "confidence": 0.32443341612815857
+    }
+  }
+]
